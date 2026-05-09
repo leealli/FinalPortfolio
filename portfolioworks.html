@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<title>Allison Lee | Portfolio </title>
+<meta name="description" content="Explore graphic design and branding projects by Allison Lee, including logo work and restaurant branding.">
+<meta name="keywords" content="graphic design, portfolio, Allison Lee, visual design, branding, works">
+<meta name="author" content="Allison Lee">
+
+<style>
+    	@font-face {
+    } body {
+        background-color: #F2E9E4;
+    } #page {
+        width: 1050px;
+        height: 1224px;
+        background: white;
+        margin: 0 auto;
+        padding: 48px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } h1 {
+        font: 40pt/1.0em 'Playfair Display';
+		font-weight: 500;
+        text-align: center;
+		margin-bottom: 30px;
+	} h2 {
+        font: 20pt/1.0em 'Lexend';
+		font-weight: 400;
+        text-align: center;
+		margin-bottom: 50px;
+    } p {
+		font: 16pt/1.4em 'Lexend'
+	} .navbar {
+  		display: flex;
+		justify-content: center;
+  		gap: 7px;
+  		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 100px;
+	} button {
+		background: #F2E9E4;
+		display: block;
+		margin-left: auto;
+		margin-right: 30px;
+		padding: 10px 18px;
+  		border-radius: 20px;
+  		font: 8pt/1.0em 'Lexend';
+		color: black;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .dark-mode {
+  		background-color: #22223B;
+  		color: white;
+	} body.dark-mode #page {
+  		background-color: #4A4E69;
+  		color: white;
+		border: none;
+		box-shadow: 2px 3px 6px black;
+	} .nav-btn {
+  		text-decoration: none;
+		margin-left: 20px;
+  		padding: 10px 18px;
+  		border-radius: 20px;
+  		background: #F2E9E4;
+  		color: black;
+  		font: 12pt/1.0em 'Lexend';
+  		font-size: 14px;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .nav-btn:hover {
+  		background: #E3D5CF;
+  		transform: scale(1.05);
+	} .container {
+  		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	} .container figure {
+		flex: 0 0 250px;
+  		margin: 8px;
+  		padding: 25px;
+		margin-bottom: 7px;
+  		font-size: 24px;
+	} .container img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+		transition: transform 0.3s ease, box-shadow 0.25s ease;
+	} .container img:hover {
+		transform: scale(1.03);
+		box-shadow: 0 7px 17px rgba(0,0,0,0.15);
+	} figcaption {
+		margin-top: 13px;
+		font: 12pt/1.0em 'Lexend';
+		text-align: center;
+	}
+</style>
+</head>
+
+<body>
+<div id="page">
+<nav class="navbar">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="portfolioworks.html" class="nav-btn">Works</a>
+  <a href="aboutme.html" class="nav-btn">About</a>
+  <a href="clientreviews.html" class="nav-btn">Testimonials</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</nav>
+	
+<h1>My Works</h1>
+
+	<div class="container">
+		
+  <figure>
+	<a href="IchiPairBlindBox.jpg">
+      <img src="IchiPairBlindBox.jpg" width="255" height="330" alt="Chopstick blind box with Asian landscape inspired packaging">
+    </a>
+    <figcaption>Ichi Pair Blind Box</figcaption>
+  </figure>
+	
+ <figure>
+	<a href="JjangaMenu.jpg">
+      <img src="JjangaMenu.jpg" width="255" height="330" alt="New menu for Japanese sushi and yakiba restaurant in Las Vegas">
+    </a>
+    <figcaption>Jjanga Restaurant Menu Redesign</figcaption>
+  </figure>
+
+		<figure>
+	<a href="MicoPosterFinal.jpg">    
+     <img src="MicoPosterFinal.jpg" width="255" height="330" alt="Tour date flyer for artist MICO">
+    </a>
+    <figcaption>Tour Promotional Poster</figcaption>
+  </figure>
+		
+	<figure>
+	<a href="SweetToothLogoExplorations.jpg">    
+     <img src="SweetToothLogoExplorations.jpg" width="255" height="330" alt="Logo concepts for brand named Sweet Tooth">
+    </a>
+    <figcaption>Sweet Tooth Logo</figcaption>
+  </figure>
+	
+		<figure>
+	<a href="TheKneaderyLogo.jpg">    
+     <img src="TheKneaderyLogo.jpg" width="255" height="330" alt="The Kneadery secondary logo followed by primary logo">
+    </a>
+    <figcaption>The Kneadery Logo</figcaption>
+  </figure>
+		
+		<figure>
+	<a href="StarlixLogo.jpg">    
+     <img src="StarlixLogo.jpg" width="255" height="330" alt="Starlix logo in center with gradient background">
+    </a>
+    <figcaption>Starlix Logo</figcaption>
+  </figure>
+
+</div>
+</div>
+
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+	
+</body>
+</html>

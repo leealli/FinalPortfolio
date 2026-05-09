@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<title>Allison Lee | Graphic and Visual Design Portfolio</title>
+<meta name="description" content="Portfolio of Allison Lee, a graphic and visual designer specializing in branding, logos, and illustrations.">
+<meta name="keywords" content="graphic design, portfolio, Allison Lee, visual design, branding">
+<meta name="author" content="Allison Lee">
+
+<style>
+    	@font-face {
+    } body {
+        background-color: #F2E9E4;
+    } #page {
+        width: 1050px;
+        height: auto;
+        background: white;
+        margin: 0 auto;
+        padding: 48px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } h1 {
+        font: 40pt/1.0em 'Playfair Display';
+		font-weight: 500;
+        text-align: center;
+		margin-bottom: 15px;
+	} h2 {
+        font: 22pt/1.0em 'Playfair Display';
+		font-weight: 400;
+        text-align: center;
+		margin-bottom: 50px;
+	} h3 {
+		font: 30pt/1.0em 'Playfair Display';
+		text-align: center;
+    } p {
+		font: 16pt/1.4em 'Lexend'
+	} .intro {
+		text-align: center;
+		margin-left: 70px;
+		margin-right: 70px;
+		padding-bottom: 20px;
+	} .navbar {
+  		display: flex;
+		justify-content: center;
+  		gap: 7px;
+  		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 100px;
+	} button {
+		background: #F2E9E4;
+		display: block;
+		margin-left: auto;
+		margin-right: 30px;
+		padding: 10px 18px;
+  		border-radius: 20px;
+  		font: 8pt/1.0em 'Lexend';
+		color: black;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .herobutton {
+		background: #C9ADA7;
+		display: inline-block;
+		width: fit-content;
+  		margin: 0 auto;
+  		padding: 12px 26px;
+  		border-radius: 300px;
+ 		text-decoration: none;
+		display: flex;
+		font: 12pt/1.0em 'Lexend';
+		color: black;
+  		font-weight: 400;
+  		transition: 0.3s;
+		border: 1.5px solid #333;
+	} .herobutton:hover {
+  		transform: scale(1.05);
+	
+/*DARK MODE*/
+	} .dark-mode {
+  		background-color: #22223B;
+  		color: white;
+	} body.dark-mode #page {
+  		background-color: #4A4E69;
+  		color: white;
+		border: none;
+		box-shadow: 2px 3px 6px black;
+	} body.dark-mode .project-card {
+    	background-color: #22223B;
+	} body.dark-mode .project-info h3 {
+    	color: white;
+	} body.dark-mode .project-info p {
+    	color: white;
+	} body.dark-mode .cta-section p {
+    	color: white;
+
+	} .nav-btn {
+  		text-decoration: none;
+		margin-left: 20px;
+  		padding: 10px 18px;
+  		border-radius: 20px;
+  		background: #F2E9E4;
+  		color: black;
+  		font: 12pt/1.0em 'Lexend';
+  		font-size: 14px;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .nav-btn:hover {
+  		background: #E3D5CF;
+  		transform: scale(1.05);
+	} .selected-works {
+    	margin-top: 120px;
+    	padding: 0 80px;
+	}.selected-works h2 {
+    	text-align: center;
+    	margin-bottom: 60px;
+	}.works-grid {
+    	display: flex;
+    	flex-direction: column;
+    	gap: 40px;
+	} .project-card {
+    	display: flex;
+    	align-items: center;
+    	gap: 40px;
+    	padding: 24px;
+    	background-color: #F2E9E4;
+    	border-radius: 24px;
+    	transition: 0.3s ease;
+    	box-shadow: 2px 4px 10px rgba(0,0,0,0.06);
+	} .project-card:hover {
+    	transform: translateY(-5px);
+	} .project-card img {
+    	width: 45%;
+    	height: 300px;
+    	object-fit: cover;
+    	border-radius: 18px;
+	} .project-info {
+    	width: 50%;
+	} .project-info h3 {
+    	font: 22pt 'Playfair Display';
+    	margin-bottom: 18px;
+		text-align: left;
+	} .project-info p {
+    	font: 10pt 'Lexend';
+    	line-height: 1.5;
+    	color: #555;
+	} .cta-section {
+    	text-align: center;
+		margin-top: 150px;
+    	padding-bottom: 150px;
+	} .cta-section h2 {
+    	font: 30pt 'Playfair Display';
+    	margin-bottom: 20px;
+	} .cta-section p {
+    	font: 13pt 'Lexend';
+    	max-width: 700px;
+    	margin: 0 auto 40px auto;
+    	line-height: 1.8;
+    	color: #555;
+	} .cta-btn {
+    	display: inline-block;
+    	padding: 12px 26px;
+    	border-radius: 999px;
+    	background-color: #C9ADA7;
+    	border: 1.5px solid #333;
+    	color: black;
+    	text-decoration: none;
+    	font: 12pt 'Lexend';
+    	transition: 0.3s ease;
+	} .cta-btn:hover {
+    	transform: scale(1.05);
+	}
+</style>
+</head>
+
+<body>
+<div id="page">
+<nav class="navbar">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="portfolioworks.html" class="nav-btn">Works</a>
+  <a href="aboutme.html" class="nav-btn">About</a>
+  <a href="clientreviews.html" class="nav-btn">Testimonials</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</nav>
+	
+<h1>Allison Lee</h1>
+<h2>Graphic and Visual Designer</h2>
+
+<p class="intro">
+I design expressive visual identities and illustrations that tell stories and shape brand experiences.
+</p>
+	
+  <a href="portfolioworks.html" class="herobutton">View My Work</a>
+
+	<section class="selected-works">
+
+    <h3>Selected Works</h3>
+
+    <div class="works-grid">
+
+        <div class="project-card">
+            <img src="JjangaMenuMain.jpg" alt="Restaurant menu front and back">
+            <div class="project-info">
+                <h3>Redesigning the Dining Experience for Clarity</h3>
+                <p>Improving readability, structure, and visual consistency through thoughtful menu design.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="IchiPairMockupMain.jpg" alt="Chopstick blind box mockup">
+            <div class="project-info">
+                <h3>Reimagining Blind Box Packaging Through Visual Storytelling</h3>
+                <p>Combining illustration, packaging, and branding into a collectible product experience.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="MicoPosterMain.jpg" alt="Music artist tour poster">
+            <div class="project-info">
+                <h3>Translating Music and Energy Through Promotional Poster Design</h3>
+                <p>Blending collage-inspired visuals and typography into a lively promotional campaign.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+	
+<section class="cta-section">
+
+    <h2>Interested in working together?</h2>
+    <p>I’m currently open to creative opportunities, collaborations, and design projects.</p>
+
+    <a href="contact.html" class="cta-btn">
+        Let’s Connect
+    </a>
+
+</section>
+</div>
+
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<title>Allison Lee | Client Reviews</title>
+<meta name="description" content="Client reviews and testimonials of work done by designer Allison Lee.">
+<meta name="keywords" content="graphic design, portfolio, Allison Lee, visual design, branding, reviews, testimonials">
+<meta name="author" content="Allison Lee">
+
+<style>
+    	@font-face {
+    } body {
+        background-color: #F2E9E4;
+    } #page {
+        width: 1050px;
+        height: 1224px;
+        background: white;
+        margin: 0 auto;
+        padding: 48px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } h1 {
+        font: 30pt/1.0em 'Playfair Display';
+		font-weight: 500;
+        text-align: center;
+		margin-bottom: 15px;
+	} h2 {
+        font: 22pt/1.0em 'Playfair Display';
+		font-weight: 400;
+        text-align: center;
+		margin-bottom: 50px;
+    } p {
+		font: 13pt/1.4em 'Lexend'
+	} .intro {
+		text-align: center;
+		margin-left: 70px;
+		margin-right: 70px;
+		padding-bottom: 20px;
+	} .navbar {
+  		display: flex;
+		justify-content: center;
+  		gap: 7px;
+  		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 100px;
+	} button {
+		background: #F2E9E4;
+		display: block;
+		margin-left: auto;
+		margin-right: 30px;
+		padding: 10px 18px;
+  		border-radius: 20px;
+  		font: 8pt/1.0em 'Lexend';
+		color: black;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .herobutton {
+		background: #C9ADA7;
+		display: inline-block;
+		width: fit-content;
+  		margin: 0 auto;
+  		padding: 7px 14px;
+  		border-radius: 300px;
+ 		text-decoration: none;
+		display: flex;
+		font: 11pt/1.0em 'Lexend';
+		color: black;
+  		font-weight: 400;
+  		transition: 0.3s;
+	} .herobutton:hover {
+  		transform: scale(1.05);
+	
+/*DARK MODE*/
+	} .dark-mode {
+  		background-color: #22223B;
+  		color: white;
+	} body.dark-mode #page {
+  		background-color: #4A4E69;
+  		color: white;
+		border: none;
+		box-shadow: 2px 3px 6px black;
+	} body.dark-mode .testimonial-card {
+		background-color: #22223B;
+
+	} .nav-btn {
+  		text-decoration: none;
+		margin-left: 20px;
+  		padding: 10px 18px;
+  		border-radius: 20px;
+  		background: #F2E9E4;
+  		color: black;
+  		font: 12pt/1.0em 'Lexend';
+  		font-size: 14px;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	} .nav-btn:hover {
+  		background: #E3D5CF;
+  		transform: scale(1.05);
+	} .testimonial-container {
+    	display: flex;
+    	flex-wrap: wrap;
+		justify-content: center;
+    	gap: 40px;
+		margin-top: 70px;
+	} .testimonial-card {
+    	width: 220px;
+    	padding: 30px;
+    	background-color: #F2E9E4;
+    	border-radius: 20px;
+    	box-shadow: 3px 3px 5px rgba(0,0,0,0.15);
+    	font-family: 'Lexend';
+		transition: 0.3s ease;
+	} .testimonial-card:hover {
+    	transform: translateY(-5px);
+	} .testimonial-card p {
+    	line-height: 1.5;
+    	margin-bottom: 20px;
+	} .testimonial-card h3 {
+    	font-size: 14px;
+    	font-weight: 500;
+	}
+</style>
+</head>
+
+<body>
+<div id="page">
+<nav class="navbar">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="portfolioworks.html" class="nav-btn">Works</a>
+  <a href="aboutme.html" class="nav-btn">About</a>
+  <a href="clientreviews.html" class="nav-btn">Testimonials</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</nav>
+	
+<h1>See what my clients have to say...</h1>
+
+	<section class="testimonials-section">
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>“Allison was incredibly thoughtful throughout the design process and brought our vision to life beautifully.”</p>
+            <h3>— Maya Chen, Marketing Coordinator</h3>
+        </div>
+	
+        <div class="testimonial-card">
+            <p>“The branding and social media content felt cohesive, polished, and exactly what we were looking for.”</p>
+            <h3>— Jjanga Sushi and Yakiba</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <p>“Very easy to communicate with and always open to feedback. The final designs exceeded expectations.”</p>
+
+            <h3>— Ethan Park, Creative Director</h3>
+        </div>
+
+    </div>
+
+</section>
+</div>
+
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+	
+</body>
+</html>
